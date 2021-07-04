@@ -17,7 +17,12 @@ function Navigation() {
       <Nav>
 
       <Hamburger toggled={isOpen} toggle={setOpen}/> 
-      <img src= {miles} alt = 'miles-logo' style={{width: '58px', height:'58px'}}/>
+      <img 
+          src= {miles} 
+          alt = 'miles-logo-header' 
+          style={{width: '58px', height:'58px'}}
+
+          />
       </Nav>
      
       </Navbar>
