@@ -13,7 +13,6 @@ export default function MainBody({forwardedRef,scrollPosition}) {
     } else {
       arrowRef.current.classList.remove('rotated-image')
     }
-   // console.log(scrollPosition, 'scrollPos here')
   }, [scrollPosition])
 
 
@@ -53,10 +52,6 @@ export default function MainBody({forwardedRef,scrollPosition}) {
              ref={arrowRef}
              onClick={arrowUpOrDown}
              />
-
-        {/* <div style={{display: 'flex', justifyContent:'center', width:'90%'}}>
-       
-        </div>    */}
       </div>
 
     </div>

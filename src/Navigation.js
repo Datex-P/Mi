@@ -11,7 +11,7 @@ function Navigation() {
 
   const [isOpen, setOpen] = useState(false)
   return (
-    <div style={{width: '100%', height:'63px', zIndex:'1'}}>
+    <div className='navbarContainer'    >
 
       <Navbar>
       <Nav>
