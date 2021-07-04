@@ -1,34 +1,31 @@
 import React, {useRef, useState} from 'react';
-import Navigation from  './Navigation'
-import MainBody from  './MainBody'
-import SliderComp from './SliderComp'
+import NavigationBar from  './NavigationBar'
+import Welcome from  './Welcome'
+import Slider from './Slider/SliderFrame'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AnyQuestions from './AnyQuestions'
 
 
-function App() {
+export default function App() {
 
   const mainAppRef = useRef('mainApp')
   const [scrollPosition, setScrollPosition] = useState(null)
 
   return (
-    <>
     <div 
         className='appContainer'
         onScroll={(e) => {setScrollPosition(e.target.scrollTop)}}
         ref={mainAppRef}
     >
-      <Navigation/>
-      <MainBody 
+      <NavigationBar/>
+      <Welcome
                 forwardedRef={mainAppRef}
                 scrollPosition={scrollPosition}
       />
   
-      <SliderComp/>
+      <Slider/>
       <AnyQuestions/>
     </div>
-      </>
   );
 }
 
-export default App;
