@@ -1,7 +1,7 @@
 import React, {useRef,useEffect} from 'react'
-import './index.scss';
 import welcomeBackground from './Pictures/milesMitLogo.jpeg'
 import arrowDown from './Pictures/arrowDown.svg'
+import './index.scss';
 
 export default function Welcome({forwardedRef,scrollPosition}) {
 

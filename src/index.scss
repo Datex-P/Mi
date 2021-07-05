@@ -6,6 +6,8 @@ body {
     display: flex;
     height: 98%;
     position: absolute;
+    min-width: 700px !important;
+    min-height: 700px !important;
   }
 
 #root {
